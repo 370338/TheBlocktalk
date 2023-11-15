@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TheBLOCKTALK</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            /*font-family: Arial, sans-serif;*/
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            position: relative;
+            gap: 20px;
+        }
+
+        .nav::before,
+        .nav::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #333;
+            position: absolute;
+            left: 0;
+        }
+
+        .nav::before {
+            top: -1px;
+        }
+
+        .nav::after {
+            bottom: -1px;
+        }
+
+        .nav a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+            min-height: 100vh; /* Set minimum height to viewport height */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Align items at the top */
+            flex-wrap: wrap; /* Allow items to wrap to the next row */
+        }
+
+        .article {
+            display: flex;
+            flex-direction: column;
+            width: calc(48% - 10px); /* Adjusted width with margin */
+            margin-bottom: 20px;
+        }
+
+        .article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .article p {
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 769px) {
+            .article {
+                width: calc(48% - 10px); /* Adjusted width with margin */
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .article {
+                width: calc(33.33% - 10px); /* Adjusted width with margin */
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .article {
+                width: calc(25% - 10px); /* Adjusted width with margin */
+            }
+        }
+
+        /* Add more media queries as needed for larger screens */
+
+        @media screen and (max-width: 768px) {
+            .article {
+                width: 100%;
+            }
+        }
+
+        .header {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>The BLOCKTALK</h1>
+        <h3>By OBG</h3>
+    </div>
+
+    <div class="nav">
+        <a href="#">Consulting</a>
+        <a href="#">Defi</a>
+        <a href="#">Education</a>
+        <!--<a href="#">Gaming</a>-->
+        <a href="#">Politics</a>
+        <a href="#">Tech</a>
+    </div>
+
+    <div class="content">
+        <div class="article">
+            <img src="images/F9j_hdsa4AA64JP.jpg" alt="Image 1">
+            <h2>Week 5 Recap</h2>
+            <p>We were joined by our friend Eric Wasik, an Associate General Counsel Member at 
+                @coinbase
+                ! After presenting, Eric led us through a case study looking at digital assets from a law perspective!</p>
+        </div>
+
+        <div class="article">
+            <img src="images/F9j_iFVagAA8Ci9.jpg" alt="Image 2">
+            <h2>Education</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed urna nec velit commodo mollis id libero. Proin viverra sapien nec justo convallis, a dignissim ligula faucibus.</p>
+        </div>
+
+        <div class="article">
+            <img src="images/New_Members.png" alt="Image 2">
+            <h2>New Members</h2>
+            <p>We then met our new members and they attended the first class of our Education 101 course taught by Owen Beedle (
+                @owenbeedle
+                )!</p>
+        </div>
+
+        <div class="article">
+            <img src="images/Canto.png" alt="Image 2">
+            <h2>Canto</h2>
+            <p>We wrapped up the class with a pitch from Jordan Brewer (
+                @_jordan_brewer
+                ) on 
+                @Canto
+                 - a digital asset management (DAM) platform that helps businesses organize, find and distribute digital assets efficiently!</p>
+        </div>
+
+        <!-- Add more articles as needed -->
+
+    </div>
+
+    <div class="footer">
+        <p>© 2022 Wall Street Journal. All rights reserved.</p>
+    </div>
+</body>
+</html>
